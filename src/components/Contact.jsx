@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { FaWhatsapp, FaPhone, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
+import { FaWhatsapp, FaPhone, FaEnvelope, FaMapMarkerAlt, FaYoutube, FaFacebook } from 'react-icons/fa';
 import './Contact.css';
 
 const Contact = () => {
@@ -27,6 +27,30 @@ const Contact = () => {
             link: 'mailto:jkborewells786@gmail.com',
             className: 'btn-email',
             buttonText: 'Send Email'
+        },
+        {
+            icon: <FaYoutube />,
+            title: 'YouTube',
+            info: '@jkborewells1688',
+            link: 'https://www.youtube.com/@jkborewells1688',
+            className: 'btn-youtube',
+            buttonText: 'Subscribe Now'
+        },
+        {
+            icon: <FaFacebook />,
+            title: 'Facebook',
+            info: 'JK Borewells',
+            link: 'https://www.facebook.com/Jkborewell',
+            className: 'btn-facebook',
+            buttonText: 'Follow Page'
+        },
+        {
+            icon: <FaFacebook />,
+            title: 'Facebook',
+            info: 'JK Drilling',
+            link: 'https://www.facebook.com/JkDrillingBorewells786',
+            className: 'btn-facebook',
+            buttonText: 'View Profile'
         }
     ];
 

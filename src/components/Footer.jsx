@@ -1,4 +1,4 @@
-import { FaWhatsapp, FaPhone, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
+import { FaWhatsapp, FaPhone, FaEnvelope, FaMapMarkerAlt, FaYoutube, FaFacebook } from 'react-icons/fa';
 import './Footer.css';
 
 const Footer = () => {
@@ -38,6 +38,21 @@ const Footer = () => {
                             <div className="footer-link">
                                 <FaMapMarkerAlt /> Jammu & Kashmir
                             </div>
+                        </div>
+                    </div>
+
+                    <div className="footer-section">
+                        <h4>Follow Us</h4>
+                        <div className="footer-contact">
+                            <a href="https://www.youtube.com/@jkborewells1688" className="footer-link" target="_blank" rel="noopener noreferrer">
+                                <FaYoutube /> YouTube Channel
+                            </a>
+                            <a href="https://www.facebook.com/Jkborewell" className="footer-link" target="_blank" rel="noopener noreferrer">
+                                <FaFacebook /> Facebook Page
+                            </a>
+                            <a href="https://www.facebook.com/JkDrillingBorewells786" className="footer-link" target="_blank" rel="noopener noreferrer">
+                                <FaFacebook /> Facebook (Drilling)
+                            </a>
                         </div>
                     </div>
                 </div>
