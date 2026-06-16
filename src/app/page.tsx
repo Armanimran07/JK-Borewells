@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <>
       {/* HERO SECTION */}
-      <section className="relative h-screen min-h-[600px] flex items-center justify-center overflow-hidden">
+      <section className="relative min-h-[100svh] flex flex-col items-center justify-center overflow-hidden pt-32 pb-24">
         {/* Background Image / Video Placeholder */}
         <div className="absolute inset-0 z-0">
           <div className="absolute inset-0 bg-brand-navy/60 z-10" />
@@ -19,10 +19,10 @@ export default function Home() {
           />
         </div>
 
-        <div className="container relative z-20 mx-auto px-4 text-center mt-20 pb-16">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-white mb-8 mx-auto">
-            <span className="w-2 h-2 rounded-full bg-brand-teal animate-pulse" />
-            <span className="text-sm font-semibold tracking-wider uppercase">Kashmir's Trusted Experts Since 1998</span>
+        <div className="container relative z-20 mx-auto px-4 text-center">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-white mb-8 mx-auto text-left sm:text-center">
+            <span className="w-2 h-2 rounded-full bg-brand-teal animate-pulse shrink-0" />
+            <span className="text-xs sm:text-sm font-semibold tracking-wider uppercase">Kashmir's Trusted Experts Since 1998</span>
           </div>
           
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-outfit font-bold text-white mb-6 leading-tight max-w-4xl mx-auto drop-shadow-lg">
