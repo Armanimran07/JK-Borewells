@@ -43,7 +43,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${inter.variable} ${outfit.variable} h-full antialiased`} suppressHydrationWarning>
-      <body className="min-h-full flex flex-col font-sans selection:bg-brand-blue selection:text-white bg-brand-gray/5">
+      <body className="min-h-full flex flex-col font-sans selection:bg-brand-blue selection:text-white bg-brand-gray/5" suppressHydrationWarning>
         <Navbar />
         <main className="flex-1 flex flex-col">
           {children}
