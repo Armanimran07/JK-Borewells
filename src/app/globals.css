@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #020617; /* Slate 950 */
+
+  --deep-navy: #0A192F;
+  --electric-blue: #0077FF;
+  --light-gray: #F3F4F6; /* Gray 100 */
+  --accent-teal: #00D2D3;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-inter);
+  
+  --color-brand-navy: var(--deep-navy);
+  --color-brand-blue: var(--electric-blue);
+  --color-brand-gray: var(--light-gray);
+  --color-brand-teal: var(--accent-teal);
+}
+
+@layer base {
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Remove default margins/padding */
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Utilities */
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
