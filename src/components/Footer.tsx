@@ -34,11 +34,18 @@ export default function Footer() {
           <div>
             <h3 className="font-outfit text-lg font-bold mb-6">Quick Links</h3>
             <ul className="space-y-3">
-              {["About Us", "Our Services", "Projects", "Gallery", "Blog", "Contact Us"].map((link) => (
-                <li key={link}>
-                  <Link href={`/${link.toLowerCase().replace(" ", "-")}`} className="text-gray-400 hover:text-brand-teal flex items-center gap-2 transition-colors">
+              {[
+                { name: "About Us", href: "/about" },
+                { name: "Our Services", href: "/services" },
+                { name: "Projects", href: "/projects" },
+                { name: "Gallery", href: "/gallery" },
+                { name: "Blog", href: "/blog" },
+                { name: "Contact Us", href: "/contact" }
+              ].map((link) => (
+                <li key={link.name}>
+                  <Link href={link.href} className="text-gray-400 hover:text-brand-teal flex items-center gap-2 transition-colors">
                     <ArrowRight className="w-4 h-4" />
-                    {link}
+                    {link.name}
                   </Link>
                 </li>
               ))}
@@ -50,17 +57,17 @@ export default function Footer() {
             <h3 className="font-outfit text-lg font-bold mb-6">Our Services</h3>
             <ul className="space-y-3">
               {[
-                "Borewell Drilling",
-                "Water Well Inspection",
-                "Pump Installation",
-                "Motor Recovery",
-                "Agricultural Solutions",
-                "Commercial Projects"
+                { name: "Borewell Drilling", href: "/services/borewell-drilling" },
+                { name: "Water Well Inspection", href: "/services/well-inspection" },
+                { name: "Pump Installation", href: "/services/pump-installation" },
+                { name: "Motor Recovery", href: "/services/motor-recovery" },
+                { name: "Agricultural Solutions", href: "/services/agricultural-solutions" },
+                { name: "Commercial Projects", href: "/services/commercial-projects" }
               ].map((service) => (
-                <li key={service}>
-                  <Link href="/services" className="text-gray-400 hover:text-brand-teal flex items-center gap-2 transition-colors">
+                <li key={service.name}>
+                  <Link href={service.href} className="text-gray-400 hover:text-brand-teal flex items-center gap-2 transition-colors">
                     <ArrowRight className="w-4 h-4" />
-                    {service}
+                    {service.name}
                   </Link>
                 </li>
               ))}
